@@ -1,8 +1,8 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import HiImage from "../../assets/img/light/Charco Hi.png";
 import "./welcome.css";
 
-export default function Index() {
+export default function WelcomeComponent() {
   return (
     <div className="root flex justify-center">
       <div className="main flex flex-col align-center justify-around">
@@ -10,9 +10,9 @@ export default function Index() {
           Hi there. <br /> Ready to do your best over work?
         </p>
         <div className="flex justify-center">
-          <button className="btn">
+          <Link to="/auth" className="btn">
             <p className="btnText">Let's Go!</p>
-          </button>
+          </Link>
         </div>
       </div>
       <div>
