@@ -1,10 +1,10 @@
-import Welcome from "./pages/Welcome";
+import Routes from "./routes";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Welcome />
+      <Routes />
     </div>
   );
 }
