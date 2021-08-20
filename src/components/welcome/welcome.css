@@ -1,49 +1,55 @@
-.root, body {
-    height: 100%;
+.root-welcome {
+    height: auto;
     width: 100%;
     background-color: #FFDF70;
-    padding-top: 3%
+    padding: 7%;
 }
 
-.hiImg {
+.hiImg-welcome {
     width: 724px;
     height: 693px;
 }
 
-.btn {
+.btn-welcome {
     background-color: #fff;
     width: 266px;
     border-radius: 30px;
 }
 
-.btnText {
+.btnText-welcome {
     font-size: 36px;
     font-weight: bold;
     margin-left: 60px;
 }
 
-.greeting {
+.greeting-welcome {
     font-size: 60px;
     font-weight: bold;
     width: 521px;
 }
 @media only screen and (max-width: 900px) {
-    .greeting {
+    .root-welcome {
+        /*padding: 0 100% 0 0;*/
+        position: fixed;
+    }
+    .greeting-welcome {
         font-size: 36px;
         text-align: center;
-        margin-left: 70px;
-        padding: 0 14%;
-        margin-top: -10%;
+        padding: 0 15%;
+        margin-top: -25%;
     }
-    .btn {
-        margin-left: 70px;
-        margin-top: 40%;
+    .btn-welcome {
+        margin-left: 10px;
+        margin-top: 20%;
     }
-    .main {
+    .main-welcome {
         background-image: url("../../assets/img/light/Charco Hi.png");
-        background-size:504px 482px ;
+        background-size:90% 482px ;
         background-repeat: no-repeat;
-        background-position: bottom;
-        background-position-x: 80px;
+        background-position-y: 150px;
+        background-position-x: 40px;
+    }
+    .hiImg {
+        display: none;
     }
 }
