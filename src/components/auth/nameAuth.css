@@ -1,0 +1,56 @@
+.root-name {
+    height: 100%;
+    width: 100%;
+}
+
+.hiImg-name {
+    /*width: 724px;*/
+    /*height: 693px;*/
+}
+
+.input {
+    width: 307px;
+    padding: 10px 14px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 56px;
+}
+
+.btn-name {
+    background-color: #fff;
+    width: 266px;
+    border-radius: 30px;
+}
+
+.btnText-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.greeting-name {
+    font-size: 60px;
+    font-weight: bold;
+    width: 521px;
+}
+@media only screen and (max-width: 900px) {
+    .root-name {
+        position: fixed;
+    }
+    .greeting-name {
+        font-size: 36px;
+        text-align: center;
+        padding: 0 14%;
+        margin-top: 5%;
+    }
+    .main-name {
+        background-image: url("../../assets/img/light/Charco Work at Home.png");
+        background-size:69% 453px ;
+        background-repeat: no-repeat;
+        background-position-y: 187px;
+        background-position-x: 80px;
+    }
+    .auth-form-name {
+        margin-bottom: 200px;
+    }
+}
