@@ -1,0 +1,55 @@
+.root-success {
+    height: auto;
+    width: 100%;
+    background-color: #FFDF70;
+    padding: 7%;
+}
+
+.hiImg-success {
+    width: 724px;
+    height: 693px;
+}
+
+.btn-success {
+    background-color: #fff;
+    width: 266px;
+    border-radius: 30px;
+}
+
+.btnText-success {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.greeting-success {
+    font-size: 60px;
+    font-weight: bold;
+    width: 521px;
+}
+@media only screen and (max-width: 900px) {
+    .root-success {
+        /*padding: 0 100% 0 0;*/
+        position: fixed;
+    }
+    .greeting-success {
+        font-size: 36px;
+        text-align: center;
+        padding: 0 15%;
+        margin-top: -25%;
+    }
+    .btn-success {
+        margin-left: 10px;
+        margin-top: 20%;
+    }
+    .main-success {
+        background-image: url("../../assets/img/light/Charco Hi.png");
+        background-size:90% 482px ;
+        background-repeat: no-repeat;
+        background-position-y: 150px;
+        background-position-x: 40px;
+    }
+    .hiImg {
+        display: none;
+    }
+}
