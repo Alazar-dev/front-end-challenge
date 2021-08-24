@@ -1,14 +1,16 @@
 import SecurityImage from "../../assets/img/light/Charco Security.png";
 import "./nameAuth.css";
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
 
 export default function AuthComponent() {
+  const routerHistory = useHistory();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => routerHistory.push("/emailAuth");
 
   return (
     <div className="root-name flex align-center mt-24 justify-center">
