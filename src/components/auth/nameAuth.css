@@ -1,6 +1,7 @@
 .root-name {
-    height: 100%;
+    height: auto;
     width: 100%;
+    padding: 6.64%;
 }
 
 .hiImg-name {

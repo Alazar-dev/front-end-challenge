@@ -5,7 +5,7 @@ import "./welcome.css";
 export default function WelcomeComponent() {
   return (
     <div className="root-welcome flex justify-center">
-      <div className="main-welcome flex flex-col align-center justify-around">
+      <div className="main-welcome flex flex-col justify-around">
         <p className="greeting-welcome text-center">
           Hi there. <br /> Ready to do your best over work?
         </p>
