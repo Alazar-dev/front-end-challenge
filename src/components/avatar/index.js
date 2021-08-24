@@ -1,4 +1,5 @@
-import SecurityImage from "../../assets/img/light/Charco Security.png";
+import MessageNotificationLight from "../../assets/img/light/Charco Message Notification.png";
+import MessageNotificationDark from "../../assets/img/dark/Charco Message Notification.png";
 import "./avatar.css";
 import { Link } from "react-router-dom";
 import { Fragment, useRef, useState } from "react";
@@ -45,13 +46,28 @@ export default function EmailAuthComponent() {
           </div>
           <div className="flex justify-between mt-32">
             <h1>Hello</h1>
-            <Link to="/success" className="shadow-xl">
+            <Link
+              to="/success"
+              className="shadow-xl dark:bg-white px-6 rounded-3xl"
+            >
               <p className="font-bold text-4xl">Done</p>
             </Link>
           </div>
         </div>
         <div>
-          <img className="hiImg-avatar" src={SecurityImage} alt="img" />
+          {localStorage.getItem("theme") === "dark" ? (
+            <img
+              className="hiImg-avatar"
+              src={MessageNotificationLight}
+              alt="img"
+            />
+          ) : (
+            <img
+              className="hiImg-avatar"
+              src={MessageNotificationDark}
+              alt="img"
+            />
+          )}
         </div>
       </div>
       <Transition.Root show={open} as={Fragment}>
