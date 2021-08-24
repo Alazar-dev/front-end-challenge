@@ -1,9 +1,10 @@
-import MessageNotificationLight from "../../assets/img/light/Charco Message Notification.png";
-import MessageNotificationDark from "../../assets/img/dark/Charco Message Notification.png";
-import "./avatar.css";
 import { Link } from "react-router-dom";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { useHistory } from "react-router-dom";
+import "./avatar.css";
+import MessageNotificationLight from "../../assets/img/light/Charco Message Notification.png";
+import MessageNotificationDark from "../../assets/img/dark/Charco Message Notification.png";
 import Ballet from "../../assets/img/light/avatars/Open Doodles Ballet.png";
 import Chilling from "../../assets/img/light/avatars/Open Doodles Chilling.png";
 import Coffee from "../../assets/img/light/avatars/Open Doodles Coffee.png";
@@ -18,6 +19,7 @@ import Messy from "../../assets/img/light/avatars/Open Doodles Messy.png";
 import Reading from "../../assets/img/light/avatars/Open Doodles Reading.png";
 
 export default function EmailAuthComponent() {
+  const routerHistory = useHistory();
   const [open, setOpen] = useState(false);
 
   const cancelButtonRef = useRef(null);
@@ -45,7 +47,27 @@ export default function EmailAuthComponent() {
             </div>
           </div>
           <div className="flex justify-between mt-32">
-            <h1>Hello</h1>
+            <div className="flex justify-end">
+              <button
+                onClick={() => routerHistory.push("/userpreference")}
+                className="shadow-xl rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-10 w-10 dark:bg-white rounded-full"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            </div>
             <Link
               to="/success"
               className="shadow-xl dark:bg-white px-6 rounded-3xl"
