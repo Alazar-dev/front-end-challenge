@@ -5,9 +5,9 @@ import useDarkMode from "../../hooks/useDarkMode";
 export default function EmailAuthComponent() {
   const [colorTheme, setTheme] = useDarkMode();
   return (
-    <div className="root-email dark:bg-black flex justify-center">
-      <div className="main-email flex flex-col align-center justify-around">
-        <p className="greeting-email text-center dark:text-white">
+    <div className="root-preference dark:bg-black flex justify-center">
+      <div className="main-preference flex flex-col align-center justify-around">
+        <p className="greeting-preference text-center dark:text-white">
           Hey [Name], Lets create your account
         </p>
         <label htmlFor="toggleB" className="flex items-center cursor-pointer">
@@ -24,7 +24,7 @@ export default function EmailAuthComponent() {
         </label>
       </div>
       <div>
-        <img className="hiImg-email" src={SecurityImage} alt="img" />
+        <img className="hiImg-preference" src={SecurityImage} alt="img" />
       </div>
     </div>
   );

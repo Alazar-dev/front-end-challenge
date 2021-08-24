@@ -1,10 +1,10 @@
-.root-email {
+.root-avatar {
     height: 100%;
     width: 100%;
     padding: 7%;
 }
 
-.hiImg-email {
+.hiImg-avatar {
     width: 724px;
     height: 693px;
 }
@@ -17,19 +17,19 @@
     border-radius: 56px;
 }
 
-.btn-email {
+.btn-avatar {
     background-color: #fff;
     width: 266px;
     border-radius: 30px;
 }
 
-.btnText-email {
+.btnText-avatar {
     font-size: 36px;
     font-weight: bold;
     margin-left: 80px;
 }
 
-.greeting-email {
+.greeting-avatar {
     font-size: 60px;
     font-weight: bold;
     width: 521px;
@@ -40,23 +40,23 @@ input:checked ~ .dot {
 }
 
 @media only screen and (max-width: 900px) {
-    .greeting-email {
+    .greeting-avatar {
         font-size: 36px;
         text-align: center;
         padding: 0 14%;
         margin-top: 5%;
     }
-    .main-email {
+    .main-avatar {
         background-image: url("../../assets/img/light/Charco Security.png");
         background-size:70% 313px ;
         background-repeat: no-repeat;
         background-position-y: 334px;
         background-position-x: 80px;
     }
-    .auth-form-email {
+    .auth-form-avatar {
         margin-bottom: 200px;
     }
-    .btn-email {
+    .btn-avatar {
         margin-bottom: 50px;
     }
 }

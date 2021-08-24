@@ -1,5 +1,5 @@
 import SecurityImage from "../../assets/img/light/Charco Security.png";
-import "./userPreference.css";
+import "./avatar.css";
 import { Link } from "react-router-dom";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -22,9 +22,9 @@ export default function EmailAuthComponent() {
   const cancelButtonRef = useRef(null);
   return (
     <div>
-      <div className="root-email dark:bg-black flex justify-center">
-        <div className="main-email flex flex-col align-center ">
-          <p className="greeting-email text-center dark:text-white">
+      <div className="root-avatar dark:bg-black flex justify-center">
+        <div className="main-avatar flex flex-col align-center ">
+          <p className="greeting-avatar text-center dark:text-white">
             Finally, let's customise your experience.
           </p>
           <h4 className="text-center py-10 text-4xl">Choose an avatar ...</h4>
@@ -51,7 +51,7 @@ export default function EmailAuthComponent() {
           </div>
         </div>
         <div>
-          <img className="hiImg-email" src={SecurityImage} alt="img" />
+          <img className="hiImg-avatar" src={SecurityImage} alt="img" />
         </div>
       </div>
       <Transition.Root show={open} as={Fragment}>
