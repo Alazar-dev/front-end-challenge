@@ -50,13 +50,22 @@ input:checked ~ .dot {
         padding: 0 14%;
         margin-top: 5%;
     }
-    .main-avatar {
+    .main-avatar-light {
         background-image: url("../../assets/img/light/Charco Message Notification.png");
         background-size:70% 40%;
         background-repeat: no-repeat;
         background-position-y: 380px;
         background-position-x: 82px;
     }
+
+    .main-avatar-dark {
+        background-image: url("../../assets/img/dark/Charco Message Notification.png");
+        background-size:70% 40%;
+        background-repeat: no-repeat;
+        background-position-y: 380px;
+        background-position-x: 82px;
+    }
+
     .auth-form-avatar {
         margin-bottom: 200px;
     }
