@@ -12,7 +12,7 @@ export default function WelcomeComponent() {
         </p>
         <div className="flex justify-center">
           <Link to="/" className="btn-restart">
-            <p className="btnText-restart">Start Over</p>
+            <p className="btnText-restart text-center">Start Over</p>
           </Link>
         </div>
       </div>
