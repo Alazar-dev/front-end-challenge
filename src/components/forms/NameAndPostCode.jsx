@@ -1,6 +1,8 @@
 import React from "react";
+import { useStateMachine } from "little-state-machine";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import updateAction from "../../actions";
 
 export default function NameAndPostCodeForm() {
   const routerHistory = useHistory();
@@ -9,7 +11,11 @@ export default function NameAndPostCodeForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => routerHistory.push("/emailAuth");
+  const { actions, state } = useStateMachine({ updateAction });
+  const onSubmit = (data) => {
+    actions.updateAction(data);
+    routerHistory.push("/emailAuth");
+  };
 
   return (
     <form
@@ -20,6 +26,7 @@ export default function NameAndPostCodeForm() {
         className="input outline-none"
         type="text"
         placeholder="Name"
+        defaultValue={state.username}
         {...register("name", { required: true })}
       />
       {errors.name && (
@@ -29,6 +36,7 @@ export default function NameAndPostCodeForm() {
         className="input outline-none"
         type="text"
         placeholder="Post Code"
+        defaultValue={state.postCode}
         {...register("postCode", { required: true })}
       />
       {errors.postCode && (
