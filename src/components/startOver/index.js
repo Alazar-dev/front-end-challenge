@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import HiImage from "../../assets/img/light/Charco Hi.png";
 import "./startOver.css";
 
 export default function WelcomeComponent() {
+  const routerHistory = useHistory();
+
+  function startOver() {
+    localStorage.clear();
+    routerHistory.push("/");
+  }
   return (
     <div className="root-restart flex justify-center">
       <div className="main-restart flex flex-col align-center justify-around">
@@ -11,9 +17,9 @@ export default function WelcomeComponent() {
           <br /> You're awesome
         </p>
         <div className="flex justify-center">
-          <Link to="/" className="btn-restart">
+          <button onClick={startOver} className="btn-restart">
             <p className="btnText-restart text-center">Start Over</p>
-          </Link>
+          </button>
         </div>
       </div>
       <div>
