@@ -35,7 +35,7 @@ export default function EmailAndPasswordForm() {
           Password must be at least 6 characters !
         </span>
       )}
-      <div className="flex justify-center mt-28">
+      <div className="flex justify-center md:mt-28 mt-48">
         <button className="btn-email shadow-2xl">
           <p className="btnText-email">Create</p>
         </button>
