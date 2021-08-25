@@ -11,7 +11,13 @@ export default function EmailAuthComponent() {
 
   return (
     <div className="root-preference dark:bg-black flex justify-center">
-      <div className="main-preference flex flex-col align-center justify-around">
+      <div
+        className={
+          localStorage.getItem("theme") === "dark"
+            ? "main-preference-light flex-col align-center justify-around"
+            : "main-preference-dark flex-col align-center justify-around"
+        }
+      >
         <p className="greeting-preference text-center dark:text-white">
           Finally, let's
           <br /> customize your experience.

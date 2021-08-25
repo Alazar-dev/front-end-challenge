@@ -39,7 +39,13 @@ export default function EmailAuthComponent() {
   return (
     <div>
       <div className="root-avatar dark:bg-black flex justify-center">
-        <div className="main-avatar flex flex-col align-center ">
+        <div
+          className={
+            localStorage.getItem("theme") === "dark"
+              ? "main-avatar-light flex flex-col align-center"
+              : "main-avatar-dark flex flex-col align-center"
+          }
+        >
           <p className="greeting-avatar text-center dark:text-white">
             Finally, let's customise your experience.
           </p>
