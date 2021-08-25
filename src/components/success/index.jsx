@@ -66,20 +66,11 @@ export default function WelcomeComponent() {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 content-center">
+                <div className="bg-white sm:p-6 sm:pb-4 content-center">
                   <ReactPlayer
                     width="100%"
-                    url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                    url="https://www.youtube.com/watch?v=R5z3s8HimN8&ab_channel=LUMO"
                   />
-                </div>
-                <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                  <button
-                    type="button"
-                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
-                    onClick={() => setOpen(false)}
-                  >
-                    Close
-                  </button>
                 </div>
               </div>
             </Transition.Child>
