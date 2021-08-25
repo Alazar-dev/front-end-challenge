@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import HiImage from "../../assets/img/light/Charco Hi.png";
+import HiImage from "../../assets/img/light/Charco High Five.png";
 import "./startOver.css";
 
 export default function WelcomeComponent() {

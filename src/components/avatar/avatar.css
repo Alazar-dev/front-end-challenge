@@ -1,7 +1,7 @@
 .root-avatar {
-    height: 100%;
+    height: auto;
     width: 100%;
-    padding: 7%;
+    padding: 6.6%;
 }
 
 .hiImg-avatar {
@@ -40,6 +40,10 @@ input:checked ~ .dot {
 }
 
 @media only screen and (max-width: 900px) {
+
+    .root-avatar {
+        position: fixed;
+    }
     .greeting-avatar {
         font-size: 36px;
         text-align: center;
@@ -47,16 +51,17 @@ input:checked ~ .dot {
         margin-top: 5%;
     }
     .main-avatar {
-        background-image: url("../../assets/img/light/Charco Security.png");
-        background-size:70% 313px ;
+        background-image: url("../../assets/img/light/Charco Message Notification.png");
+        background-size:70% 40%;
         background-repeat: no-repeat;
-        background-position-y: 334px;
-        background-position-x: 80px;
+        background-position-y: 380px;
+        background-position-x: 82px;
     }
     .auth-form-avatar {
         margin-bottom: 200px;
     }
     .btn-avatar {
         margin-bottom: 50px;
+        margin-left: -160px;
     }
 }

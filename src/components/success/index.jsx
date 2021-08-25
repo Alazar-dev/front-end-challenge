@@ -15,7 +15,7 @@ export default function WelcomeComponent() {
           <p className="greeting-success text-center">
             Lift Off! You are all set up. <br /> Time for a movie?
           </p>
-          <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 ml-32 md:ml-0 justify-center">
             <Link to="/startover" className="btn-success mr-6">
               <p className="btnText-success">Not now...</p>
             </Link>

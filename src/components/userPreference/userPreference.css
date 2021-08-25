@@ -1,7 +1,6 @@
 .root-preference {
-    height: 100%;
+    height: auto;
     width: 100%;
-    padding: 7%;
 }
 
 .hiImg-preference {
@@ -40,6 +39,10 @@ input:checked ~ .dot {
 }
 
 @media only screen and (max-width: 900px) {
+
+    .root-preference{
+        position: fixed;
+    }
     .greeting-preference {
         font-size: 36px;
         text-align: center;
@@ -47,7 +50,7 @@ input:checked ~ .dot {
         margin-top: 5%;
     }
     .main-preference {
-        background-image: url("../../assets/img/light/Charco Security.png");
+        background-image: url("../../assets/img/light/Charco Message Notification.png");
         background-size:70% 313px ;
         background-repeat: no-repeat;
         background-position-y: 334px;
