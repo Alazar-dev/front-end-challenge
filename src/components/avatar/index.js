@@ -20,6 +20,7 @@ import Reading from "../../assets/img/light/avatars/Open Doodles Reading.png";
 
 export default function EmailAuthComponent() {
   const routerHistory = useHistory();
+  const [avatar, setAvatar] = useState(null);
   const [open, setOpen] = useState(false);
 
   const cancelButtonRef = useRef(null);
@@ -34,7 +35,7 @@ export default function EmailAuthComponent() {
           <div className="flex -space-x-1 overflow-hidden ml-20 font-bold">
             <img
               className="inline-block h-16 w-16 rounded-full ring-2 ring-white"
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              src={avatar}
               alt=""
             />
             <div className="flex justify-center mb-12">
@@ -147,7 +148,9 @@ export default function EmailAuthComponent() {
                       Reading,
                     ].map((image) => (
                       <>
-                        <img className="w-28 p-2ss" src={image} alt="new" />
+                        <button onClick={() => setAvatar(image)}>
+                          <img className="w-28 p-2ss" src={image} alt="new" />
+                        </button>
                       </>
                     ))}
                   </div>
